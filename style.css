@@ -2,9 +2,30 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Change font for a modern look */
+    font-family: 'Segoe UI', system-ui, -apple-system, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Change font for a modern look */
     background-color: #f8f9fa; /* Light background for better readability */
     color: #343a40; /* Dark text color for contrast */
+}
+
+/* Accessibility: visible skip link on focus */
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.skip-link:focus {
+    left: 10px;
+    top: 10px;
+    width: auto;
+    height: auto;
+    padding: 8px 12px;
+    background: #343a40;
+    color: #fff;
+    z-index: 1000;
+    border-radius: 4px;
 }
 
 /* Navbar Styles */

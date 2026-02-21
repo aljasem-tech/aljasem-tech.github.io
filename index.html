@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
@@ -8,48 +9,39 @@
     <link href="style.css" rel="stylesheet"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+    <!-- Modern Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;700&display=swap"
+            rel="stylesheet">
     <!-- Favicon (inline SVG) -->
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23343a40'/%3E%3Ctext x='50' y='55' font-size='50' fill='%23ffffff' font-family='Segoe UI, Tahoma, Geneva, Verdana, sans-serif' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+    <link rel="icon"
+          href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23343a40'/%3E%3Ctext x='50' y='55' font-size='50' fill='%23ffffff' font-family='Segoe UI, Tahoma, Geneva, Verdana, sans-serif' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
     <!-- Open Graph / Twitter -->
-    <meta property="og:title" content="Khaldoun Aljasem | Software Engineer" />
-    <meta property="og:description" content="Experienced Data Engineer and Software Developer — portfolio and services." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://aljasem-tech.github.io/" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Khaldoun Aljasem | Software Engineer" />
-    <meta name="twitter:description" content="Experienced Data Engineer and Software Developer — portfolio and services." />
-    <meta name="theme-color" content="#343a40" />
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        h2, h3, h4, h5 {
-            margin-bottom: 1rem;
-        }
-        .card {
-            border: none;
-            border-radius: 0.5rem;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-        }
-        footer {
-            background-color: #343a40;
-            color: white;
-        }
-    </style>
+    <meta property="og:title" content="Khaldoun Aljasem | Software Engineer"/>
+    <meta property="og:description"
+          content="Experienced Data Engineer and Software Developer — portfolio and services."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://aljasem-tech.github.io/"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="Khaldoun Aljasem | Software Engineer"/>
+    <meta name="twitter:description"
+          content="Experienced Data Engineer and Software Developer — portfolio and services."/>
+    <meta name="theme-color" content="#343a40"/>
+
 </head>
+
 <body>
 
 <a class="skip-link" href="#main" tabindex="0">Skip to content</a>
+<div id="scrollProgress"></div>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg sticky-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Khaldoun Aljasem</a>
-        <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
-                data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+        <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -57,28 +49,42 @@
                 <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
                 <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
                 <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#languages">Languages</a></li>
                 <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item">
+                    <button class="nav-link btn btn-link" id="themeToggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
             </ul>
         </div>
     </div>
 </nav>
 
-<header class="bg-dark text-light text-center py-5">
+<header class="text-center py-5 reveal">
     <div class="container">
         <h1>Welcome to My Personal Website</h1>
         <p class="lead">I am Khaldoun Aljasem, an experienced Data Engineer and Software Developer.</p>
-    <a class="btn btn-primary" href="https://www.linkedin.com/in/khaldoun-aljasem/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <div class="d-flex justify-content-center gap-3">
+            <a class="btn btn-primary" href="https://www.linkedin.com/in/khaldoun-aljasem/" target="_blank"
+               rel="noopener noreferrer"><i class="fab fa-linkedin me-2"></i>LinkedIn</a>
+            <a class="btn btn-outline-light" href="Khaldoun_Aljasem_CV.pdf" target="_blank" download><i
+                    class="fas fa-download me-2"></i>Download
+                CV</a>
+        </div>
     </div>
 </header>
 
-<section class="py-5" id="about">
+<section class="py-5 reveal" id="about">
     <div class="container">
         <h2>About Me</h2>
         <p>Experienced software engineer with expertise in data engineering and embedded software development.
             Proficient in C++, VxWorks, Python, MySQL, and enterprise architecture. Skilled in OOP, real-time
-            programming, and industrial fieldbuses (SERCOS3). Familiar with CoDeSys V3 and an expert in AWS services. I
-            have developed a strong foundation in tools like PyCharm, WindRiver Workbench, Visual Studio, QtCreator, and
+            programming, and industrial fieldbuses (SERCOS3). Familiar with CoDeSys V3 and an expert in AWS
+            services. I
+            have developed a strong foundation in tools like PyCharm, WindRiver Workbench, Visual Studio, QtCreator,
+            and
             C++ Builder. Proficient in utilizing code analysis tools such as Klockwork and SonarQube. Well-versed in
             project management tools including Jira and Confluence, as well as version control systems like GIT,
             Subversion, and Gerrit. Experienced with virtualization tools like VMware and CI/CD platforms such as
@@ -87,220 +93,197 @@
     </div>
 </section>
 
-<section class="py-5 bg-light" id="experience">
+<section class="py-5 reveal" id="experience">
     <div class="container">
-        <h2>Experience</h2>
+        <h2 class="text-center">Experience</h2>
+        <div class="timeline mt-5">
+            <!-- Hella Gutmann Solutions - Lead -->
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <span class="date">Jan 2024 - Present</span>
+                    <h3>Hella Gutmann Solutions GmbH</h3>
+                    <h4>Lead Data Engineer</h4>
+                    <p>Leading the technical design and strategic vision of a cloud-based data platform on AWS.
+                        Acting as a liaison between technical teams and stakeholders.</p>
+                    <ul>
+                        <li>Architected robust and scalable data pipelines following governance and quality
+                            standards.
+                        </li>
+                        <li>Leading and mentoring a team of data engineers, selecting modern tools like OpenSearch,
+                            Terraform, and Glue.
+                        </li>
+                        <li>Project ownership: prioritizing initiatives, progress tracking, and risk management.
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-        <div class="mb-5">
-            <h3>Hella Gutmann Group (Lead Data Engineer)</h3>
-            <p><strong>Jan 2024 - Present</strong> · Ihringen, Germany · Hybrid</p>
-            <h4>Responsibilities</h4>
-            <ol>
-                <li>Designing a Cloud-Based Data Platform:
+            <!-- Hella Gutmann Solutions - Data Engineer -->
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <span class="date">Apr 2022 - Dec 2023</span>
+                    <h3>Hella Gutmann Solutions GmbH</h3>
+                    <h4>Data Engineer</h4>
+                    <p>Designed and developed a stable, scalable cloud data platform using AWS (OpenSearch,
+                        CloudFormation, Glue, DynamoDB).</p>
                     <ul>
-                        <li>Define the strategic vision and architecture for the cloud-based data platform.</li>
-                        <li>Lead and mentor the team in platform design and architecture.</li>
-                        <li>Ensure alignment with business goals and scalability requirements.</li>
+                        <li>Developed efficient ETL processes for operational data integration and analysis.</li>
+                        <li>Utilized C++, Python, and C# for core platform services and data processing.</li>
+                        <li>Ensured high data quality and structured access in an agile product environment.</li>
                     </ul>
-                </li>
-                <li>Development and Management:
-                    <ul>
-                        <li>Oversee and guide the development, customization, and management of integration tools,
-                            databases, and data access solutions.
-                        </li>
-                        <li>Establish best practices and coding standards.</li>
-                        <li>Manage and prioritize development tasks.</li>
-                    </ul>
-                </li>
-                <li>Pipeline Development:
-                    <ul>
-                        <li>Architect and design complex data pipelines.</li>
-                        <li>Ensure pipelines are optimized for performance, reliability, and scalability.</li>
-                        <li>Mentor team members in best practices for pipeline development.</li>
-                    </ul>
-                </li>
-                <li>Data Quality Assurance:
-                    <ul>
-                        <li>Define and implement data quality and governance frameworks.</li>
-                        <li>Lead initiatives for data standardization and quality assurance.</li>
-                        <li>Ensure compliance with data privacy and security regulations.</li>
-                    </ul>
-                </li>
-                <li>Tools:
-                    <ul>
-                        <li>Evaluate and select appropriate tools and technologies for the team.</li>
-                        <li>Ensure the team is trained and proficient in the use of tools.</li>
-                        <li>Stay updated with emerging tools and technologies to enhance productivity.</li>
-                    </ul>
-                </li>
-                <li>Leadership & Strategy:
-                    <ul>
-                        <li>Help lead and manage a team of data engineers.</li>
-                        <li>Set team goals, provide performance feedback, and support professional development.</li>
-                        <li>Collaborate with other departments and stakeholders to align data initiatives with business
-                            strategy.
-                        </li>
-                    </ul>
-                </li>
-                <li>Project Management:
-                    <ul>
-                        <li>Oversee multiple projects, ensuring they are completed on time.</li>
-                        <li>Identify and mitigate risks.</li>
-                        <li>Report progress and challenges to management.</li>
-                    </ul>
-                </li>
-                <li>Stakeholder Communication:
-                    <ul>
-                        <li>Act as a liaison between technical teams and business stakeholders.</li>
-                        <li>Gather and incorporate feedback from stakeholders to improve data initiatives.</li>
-                    </ul>
-                </li>
-            </ol>
-        </div>
+                </div>
+            </div>
 
-        <div class="mb-5">
-            <h3>Hella Gutmann Group (Data Engineer)</h3>
-            <p><strong>Apr 2022 - Dec 2023</strong> · Ihringen, Germany · Hybrid</p>
-            <h4>Responsibilities</h4>
-            <ol>
-                <li>Designing a Cloud-Based Data Platform:
-                    <ul>
-                        <li>Design a new cloud-based data platform to enhance efficiency and stability.</li>
-                        <li>Monitor and continuously improve the overall performance and stability of the system.</li>
-                    </ul>
-                </li>
-                <li>Development and Management:
-                    <ul>
-                        <li>Develop, customize, and manage integration tools, databases, and data access solutions
-                            within an agile product environment.
-                        </li>
-                        <li>Utilize technologies such as AWS (CloudFormation, Terraform, Lambda, Glue, S3, SNS, SQS,
-                            DynamoDB, CodeCommit), C++, C#, Python, and MySQL.
-                        </li>
-                    </ul>
-                </li>
-                <li>Pipeline Development:
-                    <ul>
-                        <li>Develop reliable, scalable, and maintainable pipelines for transporting data to central data
-                            storage in the cloud.
-                        </li>
-                    </ul>
-                </li>
-                <li>Data Quality Assurance:
-                    <ul>
-                        <li>Ensure quality-assured and modeled data can be easily discovered and accessed by
-                            applications or services.
-                        </li>
-                    </ul>
-                </li>
-                <li>Tools:
-                    <ul>
-                        <li>Utilize tools such as PyCharm, MySQL Workbench, and AWS CLI.</li>
-                    </ul>
-                </li>
-            </ol>
-        </div>
+            <!-- Hella Gutmann Solutions - Software Engineer -->
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <span class="date">June 2019 - March 2022</span>
+                    <h3>Hella Gutmann Solutions GmbH</h3>
+                    <h4>Software Development Engineer</h4>
+                    <p>Integrated MySQL databases and backend logic for workshop solutions. Focused on system
+                        integration and test automation.</p>
+                </div>
+            </div>
 
-        <div class="mb-5">
-            <h3>Hella Gutmann Group (Software Engineer)</h3>
-            <p><strong>June 2019 - March 2022</strong> · Ihringen, Germany · Hybrid</p>
-            <h4>Responsibilities</h4>
-            <ol>
-                <li>Software Development:
-                    <ul>
-                        <li>Design, implement, and test modern applications on Windows platform.</li>
-                        <li>Utilize technologies such as C++, C#, Python, MySQL, and BuildBot.</li>
-                    </ul>
-                </li>
-                <li>Internal Software Framework Development:
-                    <ul>
-                        <li>Develop internal software frameworks to enhance efficiency.</li>
-                    </ul>
-                </li>
-                <li>Quality Assurance:
-                    <ul>
-                        <li>Ensure quality assurance and successful deployment of software projects.</li>
-                    </ul>
-                </li>
-            </ol>
-        </div>
+            <!-- Schneider Electric -->
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <span class="date">Nov 2017 - May 2019</span>
+                    <h3>Schneider Electric GmbH</h3>
+                    <h4>Firmware Developer (Motion with Sercos III)</h4>
+                    <p>C++ and PLC Developer (CoDeSyS V3). Worked on motion control systems, Sercos III
+                        communication, and test automation.</p>
+                </div>
+            </div>
 
-        <div class="mb-5">
-            <h3>Previous Experience</h3>
-            <p><strong>March 2017 - May 2019</strong></p>
-            <p>Schneider Electric, Valeo, Freelancer (Software Developer), ICDL Trainer (Unicef)</p>
-            <p>Worked on projects ranging from PLC development to real-time software for comfort and driving assistance
-                systems. Mastery of field bus stacks, Agile methodologies, and various programming languages.</p>
+            <!-- Valeo -->
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <span class="date">Mar 2017 - Oct 2017</span>
+                    <h3>Valeo Schalter und Sensoren GmbH</h3>
+                    <h4>Software Development Engineer</h4>
+                    <p>C++ Developer and Jenkins administrator. Specialized in system integration for automotive
+                        sensors and driving assistance systems.</p>
+                </div>
+            </div>
+
+            <!-- Teaching & Training -->
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <span class="date">2015 - 2016</span>
+                    <h3>University of Hama / Alayman Complex</h3>
+                    <h4>Lecturer & Trainer (Part-time)</h4>
+                    <p>Instructor for Programming (C++, C#, SQL Server) and ICDL courses. Lectured on Programming I
+                        & II at University of Hama.</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<section id="skills" class="py-5">
+<section id="skills" class="py-5 reveal">
     <div class="container">
         <h2>Skills</h2>
-        <div class="row">
+        <div class="row g-4">
             <!-- Data Engineering -->
             <div class="col-md-4">
-                <h4>Data Engineering</h4>
-                <ul class="list-group">
-                    <li class="list-group-item">Data Architecture & Modeling</li>
-                    <li class="list-group-item">Data Quality Assurance</li>
-                    <li class="list-group-item">AWS (S3, Lambda, Glue, DynamoDB, OpenSearch)</li>
-                    <li class="list-group-item">ETL and Data Visualization Tools (Apache Airflow, Apache Superset)</li>
-                    <li class="list-group-item">MySQL, PostgreSQL</li>
-                </ul>
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h4 class="mb-4"><i class="fas fa-database text-primary me-2"></i>Data Engineering</h4>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge border p-2">Data Architecture</span>
+                            <span class="badge border p-2">AWS (S3, Lambda, Glue)</span>
+                            <span class="badge border p-2">ETL Pipelines</span>
+                            <span class="badge border p-2">DynamoDB & OpenSearch</span>
+                            <span class="badge border p-2">Apache Airflow</span>
+                            <span class="badge border p-2">MySQL & PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <!-- Programming Languages -->
+            <!-- Programming -->
             <div class="col-md-4">
-                <h4>Programming Languages</h4>
-                <ul class="list-group">
-                    <li class="list-group-item">C++, C#, Python</li>
-                    <li class="list-group-item">SQL</li>
-                    <li class="list-group-item">Bash/Shell Scripting</li>
-                </ul>
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h4 class="mb-4"><i class="fas fa-code text-primary me-2"></i>Programming</h4>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge border p-2">C++</span>
+                            <span class="badge border p-2">Python</span>
+                            <span class="badge border p-2">C#</span>
+                            <span class="badge border p-2">SQL</span>
+                            <span class="badge border p-2">Bash/Shell</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- Cloud & DevOps -->
             <div class="col-md-4">
-                <h4>Cloud & DevOps</h4>
-                <ul class="list-group">
-                    <li class="list-group-item">AWS (CloudFormation, Terraform, Lambda, EC2)</li>
-                    <li class="list-group-item">CI/CD (Jenkins, BuildBot)</li>
-                    <li class="list-group-item">Version Control (Git, Subversion)</li>
-                </ul>
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h4 class="mb-4"><i class="fas fa-cloud text-primary me-2"></i>Cloud & DevOps</h4>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge border p-2">Terraform</span>
+                            <span class="badge border p-2">CloudFormation</span>
+                            <span class="badge border p-2">CI/CD (Jenkins)</span>
+                            <span class="badge border p-2">Git / Subversion</span>
+                            <span class="badge border p-2">Docker / VMware</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+</section>
 
-        <!-- Additional Skills -->
-        <div class="row mt-4">
-            <div class="col-md-6">
-                <h4>Additional Skills</h4>
-                <ul class="list-group">
-                    <li class="list-group-item">Real-Time Software Development</li>
-                    <li class="list-group-item">Object-Oriented Programming (OOP)</li>
-                    <li class="list-group-item">Technical Consulting (C++, MySQL, Windows Applications)</li>
-                </ul>
+<section id="languages" class="py-5 reveal">
+    <div class="container">
+        <h2>Languages</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card p-4 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-language fa-2x text-primary mb-3"></i>
+                        <h4 class="mb-2">Arabic</h4>
+                        <p class="mb-0 text-muted">Native Proficiency</p>
+                    </div>
+                </div>
             </div>
-
-            <!-- Language Proficiency -->
-            <div class="col-md-6">
-                <h4>Language Proficiency</h4>
-                <ul class="list-group">
-                    <li class="list-group-item">Arabic (Native)</li>
-                    <li class="list-group-item">English (Fluent)</li>
-                    <li class="list-group-item">German (Fluent)</li>
-                </ul>
+            <div class="col-md-4">
+                <div class="card p-4 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-globe-americas fa-2x text-primary mb-3"></i>
+                        <h4 class="mb-2">English</h4>
+                        <p class="mb-0 text-muted">Fluent (Spoken & Written)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-4 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-comments fa-2x text-primary mb-3"></i>
+                        <h4 class="mb-2">German</h4>
+                        <p class="mb-0 text-muted">Excellent (Spoken & Written)</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
 
-<section class="py-5 bg-light" id="services">
+<section class="py-5 reveal" id="services">
     <div class="container">
         <h2>Services</h2>
-        <p class="lead">With a decade of experience in data engineering, software development, and consulting, I offer a
+        <p class="lead">With a decade of experience in data engineering, software development, and consulting, I
+            offer a
             wide range of services tailored to your business needs. Below is a breakdown of the core services I
             provide:</p>
 
@@ -321,7 +304,8 @@
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Data Pipeline Development</h5>
-                            <p class="card-text">Designing reliable, efficient data pipelines for seamless data flow,
+                            <p class="card-text">Designing reliable, efficient data pipelines for seamless data
+                                flow,
                                 optimized for performance and scalability.</p>
                         </div>
                     </div>
@@ -355,7 +339,8 @@
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Embedded Systems Development</h5>
-                            <p class="card-text">Design, implement, and test modern applications on Windows platform,
+                            <p class="card-text">Design, implement, and test modern applications on Windows
+                                platform,
                                 Utilize technologies such as C++, Python, MySQL.</p>
                         </div>
                     </div>
@@ -373,7 +358,8 @@
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Custom Software Solutions</h5>
-                            <p class="card-text">Building custom software applications from scratch, ensuring they are
+                            <p class="card-text">Building custom software applications from scratch, ensuring they
+                                are
                                 aligned with your specific business requirements and are fully scalable.</p>
                         </div>
                     </div>
@@ -389,7 +375,8 @@
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Technical Consulting for Data Engineering</h5>
-                            <p class="card-text">Providing expert advice on data engineering, cloud infrastructure, and
+                            <p class="card-text">Providing expert advice on data engineering, cloud infrastructure,
+                                and
                                 software development to enhance your company’s technical capacity.</p>
                         </div>
                     </div>
@@ -397,8 +384,10 @@
                 <div class="col-md-6 mb-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Technical Consulting for Windows Applications (C++ and MySQL)</h5>
-                            <p class="card-text">Offering consulting for building high-performance Windows applications
+                            <h5 class="card-title">Technical Consulting for Windows Applications (C++ and MySQL)
+                            </h5>
+                            <p class="card-text">Offering consulting for building high-performance Windows
+                                applications
                                 using C++ and MySQL. This includes advice on application architecture, database
                                 integration, performance optimization, and debugging strategies for robust desktop
                                 solutions.</p>
@@ -410,7 +399,7 @@
     </div>
 </section>
 
-<section class="py-5" id="contact">
+<section class="py-5 reveal" id="contact">
     <div class="container">
         <h2>Contact Me</h2>
         <form action="#" method="POST">
@@ -433,18 +422,100 @@
 
 <footer class="text-center py-4">
     <div class="container">
-        <p>&copy; 2025 Khaldoun Aljasem. All rights reserved.</p>
+        <p>&copy; 2026 Khaldoun Aljasem. All rights reserved.</p>
         <div>
-            <a class="text-decoration-none me-3" href="https://www.linkedin.com/in/khaldoun-aljasem/" target="_blank" rel="noopener noreferrer">
+            <a class="text-decoration-none me-3" href="https://www.linkedin.com/in/khaldoun-aljasem/"
+               target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-linkedin fa-lg"></i>
             </a>
-                <a class="text-decoration-none" href="https://github.com/aljasem-tech" target="_blank" rel="noopener noreferrer">
+            <a class="text-decoration-none" href="https://github.com/aljasem-tech" target="_blank"
+               rel="noopener noreferrer">
                 <i class="fab fa-github fa-lg"></i>
             </a>
         </div>
     </div>
 </footer>
 
+<button id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Theme Toggle
+    const themeToggle = document.getElementById('themeToggle');
+    const sunIcon = '<i class="fas fa-sun"></i>';
+    const moonIcon = '<i class="fas fa-moon"></i>';
+
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', currentTheme);
+    themeToggle.innerHTML = currentTheme === 'dark' ? sunIcon : moonIcon;
+
+    themeToggle.addEventListener('click', () => {
+        const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+        themeToggle.innerHTML = theme === 'dark' ? sunIcon : moonIcon;
+    });
+
+    // Back to Top Button
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTop.classList.add('show');
+        } else {
+            backToTop.classList.remove('show');
+        }
+    });
+
+    backToTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Modern Scroll Logic
+    const sections = document.querySelectorAll('section, header');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const scrollProgress = document.getElementById('scrollProgress');
+
+    // Scroll Progress Bar
+    window.addEventListener('scroll', () => {
+        const totalScroll = document.documentElement.scrollHeight - window.innerHeight;
+        const scrollPercentage = (window.scrollY / totalScroll) * 100;
+        scrollProgress.style.width = scrollPercentage + '%';
+    });
+
+    // Intersection Observer for Reveal Animations
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            }
+        });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach((el) => {
+        revealObserver.observe(el);
+    });
+
+    // Active Link Highlighting
+    window.addEventListener('scroll', () => {
+        let current = "";
+        sections.forEach((section) => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (window.pageYOffset >= sectionTop - 150) {
+                current = section.getAttribute("id") || "";
+            }
+        });
+
+        navLinks.forEach((link) => {
+            link.classList.remove("active");
+            if (link.getAttribute("href").includes(current) && current !== "") {
+                link.classList.add("active");
+            }
+        });
+    });
+</script>
 </body>
+
 </html>
